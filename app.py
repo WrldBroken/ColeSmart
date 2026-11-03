@@ -169,4 +169,10 @@ def save_grade():
 def delete_grade():
     x=request.get_json() or {}; db().x('DELETE FROM notas WHERE codigo=? AND materia=? AND periodo=?',(x.get('codigo'),x.get('materia'),x.get('periodo'))); return jsonify(ok=True)
 
-if __name__ == '__main__': APP.run(host='127.0.0.1',port=5000,debug=True)
+if __name__ == '__main__':
+    import os
+    APP.run(
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5000)),
+        debug=False
+    )
