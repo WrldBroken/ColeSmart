@@ -1,0 +1,10 @@
+{
+  "name": "ColeSmart",
+  "short_name": "ColeSmart",
+  "description": "Aplicación para facilitar la vida escolar.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb"
+}
